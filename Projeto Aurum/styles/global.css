@@ -14,6 +14,9 @@
     --sombra-passo-escura: rgba(0, 0, 0, 0.5);
     --sombra-neo-clara: rgba(255, 255, 255, 0.7);
     --sombra-neo-escura: rgba(0, 0, 0, 0.8);
+    --texto-escuro: #0c0101;
+    --borda: #313a3e;
+    --erro: #d40000;
 }
 
 * {
