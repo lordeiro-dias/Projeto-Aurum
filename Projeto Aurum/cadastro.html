@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <link rel="stylesheet" href="styles/global.css">
     <title>Cadastro</title>
 </head>
+
 <body>
-    
+    <main class="container-cadastro">
+        <section class="banner">
+            <div>
+                <h1 class="titulo-banner">Cadastro</h1>
+                <p class="texto-banner">Crie uma nova conta de usuário para o Aurum Lab</p>
+            </div>
+            <img src="assets/img/icone-logo.svg" alt="" class="imagem-banner">
+        </section>
+
+        <section class="secao-cadastro">
+            <form class="form-cadastro">
+                <div class="alinhamento">
+                    <div>
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="seu nome" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="email@email.com" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="sua senha" required>
+
+                        <label for="password">Confirmar Senha</label>
+                        <input type="password" id="password" placeholder="confirme sua senha" required>
+                        <p class="senha-conter">A senha deve conter letras, números e caractéres especiais para maior
+                            segurança.</p>
+                    </div>
+                </div>
+
+                <div class="alinhamento-botao">
+                    <button type="submit" class="botao-cadastro">ENTRAR</button>
+                    <a href="#home" class="link-voltar">Voltar</a>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
