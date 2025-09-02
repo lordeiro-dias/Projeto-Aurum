@@ -140,18 +140,21 @@ input {
     display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 913px) {
     .container-login {
         grid-template-columns: 1fr;
     }
 
     .painel-esquerdo {
         margin: 0;
+        border-radius: 0;
+        padding: 0;
     }
 
     .descricao {
         font-size: 1.1em;
         max-width: 55%;
+        font-size: 1.5em;
     }
 
     .logo {
@@ -161,7 +164,15 @@ input {
     .logo-resp {
         display: inline;
         margin-bottom: 50px;
+        width: 20%;
+        margin-top: 0;
     }
+
+    .link-cadastro{
+        margin: 0;
+        font-size: 1.9em;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -171,5 +182,24 @@ input {
 
     .painel-esquerdo{
         border-radius: 0;
+        height: 30vh;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .logo-resp {
+        width: 20%;
+        margin: 0;
+    }
+    
+    .descricao {
+        font-size: 1em;
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    .link-cadastro {
+        margin-top: 10px;
+        font-size: 1.2em;
     }
 }

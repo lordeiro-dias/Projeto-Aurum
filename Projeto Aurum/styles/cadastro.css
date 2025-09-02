@@ -6,7 +6,7 @@ body {
 .container-cadastro {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 60vh;
 }
 
 .banner {
@@ -16,7 +16,6 @@ body {
     margin: 2%;
     padding: 2%;
     border-radius: 15px;
-    height: 20vh;
     align-items: center;
 }
 
@@ -39,7 +38,7 @@ body {
 .secao-cadastro {
     display: flex;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
     justify-content: center;
 }
 
@@ -82,7 +81,7 @@ input {
     margin-bottom: 20px;
 }
 
-.botao-cadastro:hover{
+.botao-cadastro:hover {
     cursor: pointer;
 }
 
@@ -99,6 +98,102 @@ input {
     color: var(--texto-suave);
 }
 
-.link-voltar{
+.link-voltar {
     color: var(--texto-escuro);
+}
+
+.logo-resp{
+    display: none;
+}
+
+@media (max-width:913px) {
+    .container-cadastro{
+        height: 80vh;
+    }
+
+    .alinhamento{
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .form-cadastro{
+        width: 70%;
+    }
+
+    label{
+        font-size: 1.9em;
+    }
+
+    input{
+        padding: 15;
+        margin-bottom: 5%;
+        font-size: 1.5em;
+    }
+
+    .senha-conter{
+        margin-top: -5%;
+        font-size: 1.2em;
+    }
+
+    .botao-cadastro{
+        font-size: 1.5em;
+    }
+
+    .link-voltar{
+        font-size: 1.5em;
+    }
+
+    .banner{
+        margin: 0;
+        border-radius: 0;
+        height: 15vh;
+        flex-direction: column-reverse;
+    }
+
+    .alinha-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem-banner{
+        display: none;
+    }
+
+    .logo-resp{
+        display: inline;
+    }
+}
+
+@media (max-width:600px){
+    .container-cadastro{
+        width: 100%;
+    }
+
+    .form-cadastro{
+        width: 60%;
+    }
+
+    label{
+        font-size: 1.6em;
+    }
+
+    input{
+        padding: 15;
+        margin-bottom: 5%;
+        font-size: 1.3em;
+    }
+
+    .banner{
+        margin-bottom: 50px;
+    }
+
+    .botao-cadastro{
+        width: 300%;
+    }
+
+    .senha-conter{
+        text-align: center;
+    }
 }
